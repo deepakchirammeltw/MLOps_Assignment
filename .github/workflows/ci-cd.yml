@@ -25,6 +25,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r M3/requirements.txt
+          pip install flake8  
       
       - name: Lint code
         run: |
