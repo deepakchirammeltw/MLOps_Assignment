@@ -26,6 +26,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r M3/requirements.txt
 
+      - name: Set working directory to M1
+        run: cd M1
+
       - name: Train Model
         run: |
           python M1/training2.py
