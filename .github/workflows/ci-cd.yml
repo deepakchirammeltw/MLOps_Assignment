@@ -32,7 +32,7 @@ jobs:
 
       - name: Verify Model Exists
         run: |
-          ls -l model2.joblib
+          ls -l M1/model2.joblib
 
       - name: Run Tests
         run: |
