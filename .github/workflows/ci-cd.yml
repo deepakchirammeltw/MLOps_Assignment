@@ -26,26 +26,23 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r M3/requirements.txt
 
-      - name: Set working directory to M1
-        run: cd M1
-
       - name: Train Model
         run: |
-          python training2.py
+          python M1/training2.py
 
       - name: Verify Model Exists
         run: |
-          ls -l model2.joblib
+          ls -l M1/model2.joblib
 
       - name: Run Tests
         run: |
-          pytest test_model.py
+          pytest M1/test_model.py
 
       - name: Upload Model Artifact
         uses: actions/upload-artifact@v3
         with:
           name: trained-model
-          path: model2.joblib
+          path: M1/model2.joblib
       
       - name: Commit model to repo
         run: |
