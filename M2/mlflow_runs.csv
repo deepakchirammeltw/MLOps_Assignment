@@ -1,0 +1,5 @@
+"Start Time","Duration","Run ID","Name","Source Type","Source Name","User","Status","n_estimators","mse"
+"2025-01-26 19:00:16","3.9s","dfda01ac16b44f68a3e015a7afa33dc1","RF_200","LOCAL","Documents/Bits_AIML/MLOps/M2/Group40_M2_Assignment1.py","akbalamu","FINISHED","200","12.549688977941187"
+"2025-01-26 19:00:12","3.5s","dc4db307a69b4636be9422c1e4afcc16","RF_100","LOCAL","Documents/Bits_AIML/MLOps/M2/Group40_M2_Assignment1.py","akbalamu","FINISHED","100","12.273325196078426"
+"2025-01-26 19:00:09","3.2s","20ae5294892e46af96a9b75687475ce2","RF_50","LOCAL","Documents/Bits_AIML/MLOps/M2/Group40_M2_Assignment1.py","akbalamu","FINISHED","50","11.264921137254907"
+"2025-01-26 19:00:04","5.1s","a095918df5ea4adf836bf3e197a4ca68","RF_10","LOCAL","Documents/Bits_AIML/MLOps/M2/Group40_M2_Assignment1.py","akbalamu","FINISHED","10","16.336376470588235"
