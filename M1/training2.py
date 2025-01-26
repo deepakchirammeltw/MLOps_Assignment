@@ -1,5 +1,6 @@
 import joblib
 import optuna
+import os
 from sklearn.datasets import load_iris
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
@@ -30,6 +31,12 @@ best_params = study.best_params
 model = RandomForestClassifier(**best_params, random_state=42)
 model.fit(X_train, y_train)
 
+# Get the current working directory
+current_directory = os.getcwd()
+
+# Define the path to save the file
+file_path = os.path.join(current_directory, "model2.joblib")
+
 # Save the model
-joblib.dump(model, "model2.joblib")
+joblib.dump(model, file_path)
 print("Model training complete. Saved as 'model2.joblib'.")
