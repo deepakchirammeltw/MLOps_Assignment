@@ -14,8 +14,8 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 @pytest.fixture
 def trained_model():
-    """Load the trained model from M1/model2.joblib"""
-    return joblib.load("M1/model2.joblib")
+    """Load the trained model from model2.joblib"""
+    return joblib.load("model2.joblib")
 
 def test_model_accuracy(trained_model):
     """Ensure the model achieves an acceptable accuracy"""

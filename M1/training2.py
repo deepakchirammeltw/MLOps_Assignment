@@ -31,5 +31,5 @@ model = RandomForestClassifier(**best_params, random_state=42)
 model.fit(X_train, y_train)
 
 # Save the model
-joblib.dump(model, "M1/model2.joblib")
-print("Model training complete. Saved as 'M1/model2.joblib'.")
+joblib.dump(model, "model2.joblib")
+print("Model training complete. Saved as 'model2.joblib'.")

@@ -37,3 +37,19 @@ jobs:
       - name: Run Tests
         run: |
           pytest M1/test_model.py
+
+      - name: Upload Model Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: trained-model
+          path: M1/model2.joblib
+      
+      - name: Commit model to repo
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add M1/model2.joblib
+          git commit -m "Auto-update model2.joblib"
+          git push
+        
+    
