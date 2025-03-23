@@ -6,6 +6,7 @@ import tensorflow as tf
 from mlflow.models.signature import infer_signature
 from alibi_detect.cd import KSDrift
 import numpy as np
+import os
 
 # Set MLflow tracking URI
 mlflow.set_tracking_uri("http://127.0.0.1:5000")
@@ -60,3 +61,13 @@ for run in range(5):  # Run 5 times
         # Detect drift
         drift_preds = drift_detector.predict(X_test)
         mlflow.log_metric("drift_detected", int(drift_preds['data']['is_drift']))
+
+        # Get the current run ID
+        run_id = mlflow.active_run().info.run_id
+        print(f"Run ID: {run_id}")
+
+        # Download artifacts for the current run
+        artifact_path = f"artifacts_run_{run + 1}"
+        os.makedirs(artifact_path, exist_ok=True)  # Create directory for artifacts
+        mlflow.artifacts.download_artifacts(run_id=run_id, dst_path=artifact_path)
+        print(f"Artifacts for Run {run + 1} downloaded to {artifact_path}")
