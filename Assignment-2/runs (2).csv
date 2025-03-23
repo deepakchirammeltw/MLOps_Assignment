@@ -1,0 +1,6 @@
+"Start Time","Duration","Run ID","Name","Source Type","Source Name","User","Status","max_depth","n_estimators","accuracy","drift_detected"
+"2025-03-23 16:09:09","2.2min","67ca7a1acbed47e79ad062e7d763c47d","Run5","LOCAL","assignment2_M4.py","akbalamu","FINISHED","10","100","0.8427","0"
+"2025-03-23 16:07:02","2.1min","cd3e68b113924a9baab9c4705bf694c1","Run4","LOCAL","assignment2_M4.py","akbalamu","FINISHED","10","100","0.8445","0"
+"2025-03-23 16:04:37","2.4min","69e253bed4d04351921cf5e2edd6ab71","Run3","LOCAL","assignment2_M4.py","akbalamu","FINISHED","10","100","0.8436","0"
+"2025-03-23 16:01:29","3.1min","82fadda17bf8499aa4d57c09180880d7","Run2","LOCAL","assignment2_M4.py","akbalamu","FINISHED","10","100","0.843","0"
+"2025-03-23 15:58:36","2.9min","2986e1d9749f430b92b46303f5f7b5e9","Run1","LOCAL","assignment2_M4.py","akbalamu","FINISHED","10","100","0.8421","0"
